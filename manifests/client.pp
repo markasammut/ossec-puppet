@@ -13,7 +13,7 @@ class ossec::client(
   $ossec_service_provider  = $::ossec::params::ossec_service_provider,
   $selinux                 = false,
   $agent_name              = $::hostname,
-  $agent_ip_address        = $::ipaddress,
+  $agent_ip_address        = $::ipaddress_eth0,
   $manage_repo             = true,
   $manage_epel_repo        = true,
   $agent_package_name      = $::ossec::params::agent_package,
