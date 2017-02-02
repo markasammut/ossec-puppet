@@ -19,7 +19,7 @@ class ossec::client(
   $agent_package_name      = $::ossec::params::agent_package,
   $agent_service_name      = $::ossec::params::agent_service,
   $manage_client_keys      = true,
-  $max_clients             = 3000,
+  $max_clients             = 999999999,
   $ar_repeated_offenders   = '',
 ) inherits ossec::params {
   validate_bool(
